@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Cute Font', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Cute Font', sans-serif;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-size: 30px;
+    color :rgb(0, 247, 255);
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+}
+
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+body{
+    align-content: center;
+}
+
+.container{
+    min-height: calc(100vh - 50px);
+    color: white;
+    overflow: auto;
+    transition: 1s ease-in-out;
+}
+
+.titlevid{
+    padding-bottom: 500px;
+}
+
+.iframe-container {
+    padding: 40px;
+    overflow: auto;
+    flex: 4;
+    border: none;
+    align-items: center;
+}
+
+.responsive-iframe {
+    width: 100%;
+}
+
+.gdrivelink{
+    margin-bottom: 5px;
+    background-color: red;
+    color: white;
+}
+
+.videowrap{
+    text-align: center;
+}
+
+.videocontent{
+    display: grid;
+    flex: 2;
+    align-items: center;
+    background-color: #151515;
+}
+
+.videotitle{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    font-size: 70px;
+    text-align: center;
+    line-height: 0.7;
+}
+
+.videodesc{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.videodet{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: gray;
+    opacity: .5;
+}
+
+.container.active{
+    background-color: white;
+    color: #151515;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.logo.active{
+    color: blue;
+}
+
+.feature-content.active{
+    background-color: white;
+}
+
+.videotitle.active{
+    color: black;
+}
+
+.videodesc.active{
+   color: black;
+}
+
+.videodet.active{
+   color: black;
+}
+
+.videocontent.active{
+    background-color: white;
+}
+
+@media only screen and (max-width: 940px) {
+    .menu-container{
+        display: none;
+    }
+}
